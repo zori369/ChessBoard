@@ -142,39 +142,4 @@ class ChessBoard {
       }
     });
   }
-
-  setTheme(theme) {
-  	this.setColors(theme.color);
-  	this.dropdown.querySelector('.color-desc').innerHTML = theme.name;
-  }
-
-  setModel(model) {
-  	this.model = model;
-  	model.subscribe(this.onModelChange.bind(this))
-  }
-
-  onModelChange() {
-
-  }
-}
-
-class Model {
-	constructor(n) {
-		this.data = [];
-	}  
-
-	subscribe(callback) {
-		
-	}
-
-	notifyAll() {
-		this.callbacks.forEach(callback => {
-			callback();
-		})
-	}
-
-	change(row, column, value) {
-		this.data[row][column] = value;
-		this.notifyAll();
-	}
 }
