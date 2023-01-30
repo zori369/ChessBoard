@@ -1,0 +1,139 @@
+body {
+  background-color: #22262a;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #4f565e;
+  width: 75%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.colors {
+  display: flex;
+  align-items: baseline;
+  border-radius: 5px;
+  background-color: #22262a;
+  padding: 5px;
+  flex-wrap: wrap;
+  width: 50px;
+  justify-content: center;
+  position: relative;
+}
+.colors > img {
+  height: 15px;
+  margin-bottom: 5px;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.colors > img:first-child {
+  height: 25px;
+}
+.colors > .color-desc {
+  color: green;
+}
+
+.options {
+  color: white;
+  position: absolute;
+  background: #22262a;
+  top: 36px;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hidden {
+  display: none;
+}
+.container__box {
+  margin-bottom: 20px;
+}
+.container__input {
+  display: flex;
+}
+.input__label {
+  margin-right: 10px;
+}
+.start-button {
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #6699cc;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  display: flex;
+}
+
+.board:last-child {
+  margin-right: 0px;
+}
+
+.board {
+  width: 500px;
+  height: 500px;
+  border: 5px solid #d14f4b;
+
+  margin-right: 10px;
+}
+.row {
+  width: 100%;
+  display: flex;
+}
+.cell {
+  height: 100%;
+}
+
+.black {
+  background: black;
+}
+.white {
+  background: white;
+}
+.blue {
+  background: #6699cc;
+}
+.purple {
+  background: purple;
+}
+.green {
+  background: lightgreen;
+}
+.orange {
+  background: #d14f4b;
+}
+
+.boards-container {
+  display: flex;
+  flex-direction: row;
+
+  padding: 10px;
+  background-color: #2f2f2f;
+  border: 1px solid orange;
+  min-height: 500px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  justify-content: flex-start;
+}

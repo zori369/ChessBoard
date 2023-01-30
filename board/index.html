@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chess Board</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="src/index.js"></script>
+  </head>
+  <body>
+    <main class="container" id="place">
+      <div class="container__box">
+        <div class="heading">
+          <h1>Create a chess board.</h1>
+          <div class="colors" id="colorPicker">
+            <span class="color-desc">Classic</span>
+            <img src="styles/images/brush.svg" />
+            <img class="arrow" src="styles/images/arrow.svg" />
+            <div class="options hidden">
+              <p>Classic</p>
+              <p>Blue</p>
+              <p>Green</p>
+            </div>
+          </div>
+        </div>
+        <div class="container__input">
+          <label class="input__label" for="countN"
+            >Please put the number of squares of one side of the board:</label
+          >
+          <input type="number" name="countN" id="countN" value="8" />
+          <button class="start-button" id="start">Add New Board</button>
+        </div>
+      </div>
+      <!-- <div class="board"></div> -->
+      <div class="boards-container"></div>
+    </main>
+  </body>
+</html>
